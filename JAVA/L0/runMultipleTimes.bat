@@ -1,0 +1,1 @@
+FOR /l %%i in (1,1,5) do gradlew run &
