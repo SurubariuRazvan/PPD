@@ -14,11 +14,11 @@ public class Main {
     public static void main(String[] args){
         String filePath = "text1.txt", filePath2 = "text2.txt", filePathX = "text2.xlsx";
         int size = 100, min = 2, max = 100, lineIndex = 0;
-//        //1
-//        new TextFile(filePath).writeRandomNumbers(size, min, max);
-//        new TextFile(filePath2).writeRandomNumbers(size, min, max);
-//        //2
-//        System.out.println(new TextFile(filePath).compareTo(filePath2));
+        //1
+        new TextFile(filePath).writeRandomNumbers(size, min, max);
+        new TextFile(filePath2).writeRandomNumbers(size, min, max);
+        //2
+        System.out.println(new TextFile(filePath).compareTo(filePath2));
 //        //3
 //        new ExcelFile(filePathX).writeToLine(lineIndex, "a", "b", "c");
         new ExcelFile(filePathX).writeNewLine("1", "2", "3");

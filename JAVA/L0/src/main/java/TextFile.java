@@ -23,7 +23,7 @@ public class TextFile {
             int[] ints = new Random().ints(min, max + 1).limit(size).toArray();
             try {
                 FileWriter writer = new FileWriter(new File(filePath));
-                writer.write(ints[0]);
+                writer.write(String.valueOf(ints[0]));
                 for(int i = 1; i < ints.length; i++)
                     writer.write(" " + ints[i]);
                 writer.close();
