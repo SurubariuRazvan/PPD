@@ -1,0 +1,1 @@
+FOR /l %%i in (1,1,5) do cmake-build-debug\L0.exe &
