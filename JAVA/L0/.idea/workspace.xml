@@ -29,7 +29,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d8b5cae-eaff-40fe-89d9-9a0ed52bdda3" name="Default Changelist" comment="" />
+    <list default="true" id="1d8b5cae-eaff-40fe-89d9-9a0ed52bdda3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/src/main/java/ExcelFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L1/src/main/java/TextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,47 +66,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="L0" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="L0" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -125,7 +98,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1iN3a8Cei2PQm9Isn79oWNHHsJZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -153,6 +128,17 @@
     <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="L0.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,9 +267,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Batch.runMultipleTimes" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.L0 [clean]" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Batch.runMultipleTimes" />
         <item itemvalue="Gradle.L0 [assemble]" />
         <item itemvalue="Gradle.L0 [init]" />
       </list>
@@ -334,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601760039058</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1601804275965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601804275965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,18 +379,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1601748598625" />
-    <state x="743" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601750657974">
+    <state x="743" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601803718686">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1601750657974" />
+    <state x="743" y="405" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1601803718686" />
     <state x="1170" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601739415621">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1170" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601739415621" />
-    <state x="568" y="117" key="CommitChangelistDialog2" timestamp="1601760038656">
+    <state x="568" y="117" key="CommitChangelistDialog2" timestamp="1601804275437">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="568" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1601760038656" />
+    <state x="568" y="117" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1601804275437" />
     <state width="339" height="442" key="Diff.GoToChangePopup" timestamp="1601757683014">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -410,22 +403,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601753386878" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1601754391589">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1601804721725">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601754391589" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1601754391589">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601804721725" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1601804721724">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601754391589" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1601754391589">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601804721724" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1601804721724">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601754391589" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1601754391589">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601804721724" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1601804721724">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601754391589" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601804721724" />
     <state width="1877" height="295" key="GridCell.Tab.1.bottom" timestamp="1601747956395">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -454,10 +447,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="512" y="124" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1601751416998" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601760816537">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1601804282000">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601760816537" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1601804282000" />
     <state x="1046" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601743981695">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -466,9 +459,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="760" y="441" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1601757385421" />
-    <state x="342" y="150" key="new project wizard" timestamp="1601750822019">
+    <state x="342" y="150" key="new project wizard" timestamp="1601803600294">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="342" y="150" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1601750822019" />
+    <state x="342" y="150" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1601803600294" />
   </component>
 </project>
