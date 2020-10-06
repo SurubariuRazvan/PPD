@@ -5,7 +5,6 @@
 #include "TextFile.h"
 #include "ExcelFile.h"
 
-
 //Set de functii de ajutor in realizarea laboratoarelor:
 //1) creare de fisier care contine numere intregi aleatoare dintr-un interval precizat
 //(parametrii: file_name; size; min; max)
@@ -29,12 +28,14 @@ int main() {
     TextFile(filePath).writeRandomNumbers(size, min, max);
     TextFile(filePath2).writeRandomNumbers(size, min, max);
     //2
-    cout << TextFile(filePath).compareTo(filePath2);
+//    cout << TextFile(filePath).compareTo(filePath2);
     //3
 //    ExcelFile(filePathX).writeNewLine(4,"1", "2", "3", "merge");
 
     //4
     //runMultipleTimes
     //FOR /l %i in (1,1,5) do cmake-build-debug\L0.exe
+
+
     return 0;
 }
