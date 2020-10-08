@@ -42,8 +42,8 @@ public class Main {
                     TextFile outFile = new TextFile(matrixPath + "TestOut.txt");
                     outFile.writeMatrix(parallelResult);
                     if (outFile.compareTo(matrixPath + "Out.txt")) {
-                        System.out.println("Solved in:" + (endTime - startTime) + " milliseconds");
-//                        new ExcelFile("results.xlsx").writeNewLine(matrixPath, String.valueOf(n), String.valueOf(m), String.valueOf(nw), String.valueOf(mw), String.valueOf(nrThreads), method.name(), (endTime - startTime) + " milliseconds");
+                        System.out.println("Solved in: " + (endTime - startTime) + " milliseconds");
+//                        new ExcelFile("results.xlsx").writeNewLine(matrixPath, String.valueOf(n), String.valueOf(m), String.valueOf(nw), String.valueOf(mw), String.valueOf(nrThreads), method.name(), String.valueOf(endTime - startTime));
                     }
                 }
     }

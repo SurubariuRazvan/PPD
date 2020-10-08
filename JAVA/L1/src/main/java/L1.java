@@ -37,10 +37,13 @@ public class L1 {
     private void calculateKernel(int[][] vMatrix, double[][] wMatrix, int[][] result, int i, int j) {
         if (i < nw / 2 || j < mw / 2 || i >= n - nw / 2 || j >= m - mw / 2)
             result[i][j] = vMatrix[i][j];
-        else
+        else {
+            double r = 0;
             for(int k = -nw / 2; k < nw / 2 + 1; k++)
                 for(int l = -mw / 2; l < mw / 2 + 1; l++)
-                    result[i][j] += vMatrix[i + k][j + l] * wMatrix[k + nw / 2][l + mw / 2];
+                    r += vMatrix[i + k][j + l] * wMatrix[k + nw / 2][l + mw / 2];
+            result[i][j] = (int) r;
+        }
     }
 
     //dupa linii
@@ -71,39 +74,6 @@ public class L1 {
             calculateKernel(vMatrix, wMatrix, result, i, j);
     }
 
-    //block in matrix
-    public int[][] parallelSolveBlock(int nrThreads) {
-        int[][] parallelResult = new int[n][m];
-        List<Thread> threads = new ArrayList<>();
-        for(int t1 = 0; t1 < Math.round(Math.sqrt(nrThreads)); t1++) {
-            for(int t2 = 0; t2 < Math.round(Math.sqrt(nrThreads)); t2++) {
-                int finalT1 = t1;
-                int finalT2 = t2;
-                threads.add(new Thread(() -> {
-                    int startI = n * finalT1 / (int) Math.round(Math.sqrt(nrThreads)), endI = n * (finalT1 + 1) / (int) Math.round(Math.sqrt(nrThreads));
-                    int startJ = m * finalT2 / (int) Math.round(Math.sqrt(nrThreads)), endJ = m * (finalT2 + 1) / (int) Math.round(Math.sqrt(nrThreads));
-                    solveBlock(vMatrix, wMatrix, parallelResult, startI, endI, startJ, endJ);
-                }));
-            }
-        }
-        for(var t : threads)
-            t.start();
-        for(var t : threads) {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        return parallelResult;
-    }
-
-    private void solveBlock(int[][] vMatrix, double[][] wMatrix, int[][] result, int startI, int endI, int startJ, int endJ) {
-        for(int i = startI; i < endI; i++)
-            for(int j = startJ; j < endJ; j++)
-                calculateKernel(vMatrix, wMatrix, result, i, j);
-    }
-
     //dupa coloane
     public int[][] parallelSolveColumn(int nrThreads) {
         int[][] parallelResult = new int[n][m];
@@ -130,5 +100,37 @@ public class L1 {
     private void solveColumn(int[][] vMatrix, double[][] wMatrix, int[][] result, int j) {
         for(int i = 0; i < n; i++)
             calculateKernel(vMatrix, wMatrix, result, i, j);
+    }
+
+    //block in matrix
+    public int[][] parallelSolveBlock(int nrThreads) {
+        int[][] parallelResult = new int[n][m];
+        List<Thread> threads = new ArrayList<>();
+        for(int t1 = 0; t1 < Math.round(Math.sqrt(nrThreads)); t1++)
+            for(int t2 = 0; t2 < Math.round(Math.sqrt(nrThreads)); t2++) {
+                int finalT1 = t1;
+                int finalT2 = t2;
+                threads.add(new Thread(() -> {
+                    int startI = n * finalT1 / (int) Math.round(Math.sqrt(nrThreads)), endI = n * (finalT1 + 1) / (int) Math.round(Math.sqrt(nrThreads));
+                    int startJ = m * finalT2 / (int) Math.round(Math.sqrt(nrThreads)), endJ = m * (finalT2 + 1) / (int) Math.round(Math.sqrt(nrThreads));
+                    solveBlock(vMatrix, wMatrix, parallelResult, startI, endI, startJ, endJ);
+                }));
+            }
+        for(var t : threads)
+            t.start();
+        for(var t : threads) {
+            try {
+                t.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        return parallelResult;
+    }
+
+    private void solveBlock(int[][] vMatrix, double[][] wMatrix, int[][] result, int startI, int endI, int startJ, int endJ) {
+        for(int i = startI; i < endI; i++)
+            for(int j = startJ; j < endJ; j++)
+                calculateKernel(vMatrix, wMatrix, result, i, j);
     }
 }
